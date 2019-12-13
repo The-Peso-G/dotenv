@@ -10,8 +10,7 @@
     "pretest": "npm run lint",
     "test": "tap tests/*.js --100",
     "prerelease": "npm test",
-    "release": "standard-version",
-    "postinstall": "opencollective-postinstall"
+    "release": "standard-version"
   },
   "repository": {
     "type": "git",
@@ -37,10 +36,6 @@
     "standard-version": "^5.0.2",
     "tap": "^13.1.2"
   },
-  "dependencies": {
-    "opencollective-postinstall": "^2.0.2",
-    "opencollective": "^1.0.3"
-  },
   "engines": {
     "node": ">=8"
   },
@@ -48,9 +43,5 @@
     "ignore": [
       "flow-typed/"
     ]
-  },
-  "collective": {
-    "type": "opencollective",
-    "url": "https://opencollective.com/dotenv"
   }
 }
